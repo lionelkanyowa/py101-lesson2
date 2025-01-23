@@ -52,16 +52,19 @@ while invalid_number(number2):
 # printing the numbers
 # print(f'{number1} {number2')
 
-print('What operation would you like to perform?\n(1)Add (2)Subtract (3)Multiply (4)Divide')
+print("""What operation would you like to perform?
+      (1)Add (2)Subtract (3)Multiply (4)Divide""")
 operation = input()
-# 01/ 22/2024: Adding looping logic to validate the operation requested by the user. The only
+# 01/ 22/2024: Adding looping logic to validate the operation requested 
+# by the user. The only
 # valid inputs for the operation are '1','2','3','4'.
 while operation not in ['1', '2', '3', '4']:
     prompt('You must choose 1, 2, 3 or 4')
     operation = input()
 
 
-# perform if/else statement to perform arithmetic operations based on user request.
+# perform if/else statement to perform arithmetic operations 
+# based on user request.
 
 # 01/22/2025 Replacing if/else with match case statement
 # if operation == '1': # '1' represents addition
@@ -84,6 +87,3 @@ match operation:
         output = int(number1) / int(number2)
 
 print(f"The result is: {output}")
- 
-
-
